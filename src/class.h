@@ -28,7 +28,6 @@ public:
     void writeVar(QString);
 	
 	Q_INVOKABLE void readInitParams();
-    Q_INVOKABLE void clearVar();
 
 signals:
     void varChanged();

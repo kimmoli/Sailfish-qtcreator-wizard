@@ -14,7 +14,7 @@ Page
 		{
             MenuItem 
 			{
-                text: About..."
+                text: "About..."
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"),
                                           { "version": "%cClassName:l%.version",
                                               "year": "2014",
