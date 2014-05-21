@@ -16,6 +16,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     QObject(parent)
 {
 	m_var = "";
+
+	emit versionChanged();
+}
+
+void %cClassName:c%::readVersion()
+{
+	return APPVERSION;
 }
 
 void %cClassName:c%::readInitParams()
@@ -40,13 +47,10 @@ void %cClassName:c%::writeVar(QString s)
 {
     m_var = s;
 	
+    QSettings settings;
+    settings.setValue("var", m_var);
+
 	emit varChanged();	
 }
 
-void %cClassName:c%::clearVar()
-{
-	m_var = "";
-	
-	emit varChanged();
-}
 	

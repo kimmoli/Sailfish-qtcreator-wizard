@@ -16,12 +16,15 @@ class %cClassName:c% : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QString variable READ readVar WRITE writeVar(QString) NOTIFY varChanged())
+	Q_PROPERTY(QString version READ readVersion NOTIFY versionChanged())
 
 public:
     explicit %cClassName:c%(QObject *parent = 0);
     ~%cClassName:c%();
 
     QString readVar();
+	QString readVersion();
+
     void writeVar(QString);
 	
 	Q_INVOKABLE void readInitParams();
@@ -29,6 +32,7 @@ public:
 
 signals:
     void varChanged();
+	void versionChanged();
 
 private:
     QString m_var;
