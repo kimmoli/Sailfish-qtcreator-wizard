@@ -50,7 +50,7 @@
         <file source="qml/pages/FirstPage.qml" target="qml/pages/%EkaSivu:c%.qml" openeditor="true"/>
 		<file source="qml/pages/AboutPage.qml" target="qml/pages/AboutPage.qml" openeditor="false"/>
         <file source="qml/template.qml" target="qml/%ProjectName%.qml" openeditor="true"/>
-        <file source="rpm/template.yaml" target="rpm/%ProjectName%.yaml"/>
+        <file source="rpm/template.spec" target="rpm/%ProjectName%.spec"/>
     </files>
     <fieldpagetitle>Application Details</fieldpagetitle>
     <fields>
