@@ -16,10 +16,10 @@ Page
 			{
                 text: "About..."
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"),
-                                          { "version": "%cClassName:l%.version",
+                                          { "version": %cClassName:l%.version,
                                               "year": "2014",
                                               "name": "%Summary%",
-                                              "imagelocation": ""} )
+                                              "imagelocation": "/usr/share/icons/hicolor/86x86/apps/%ProjectName%.png"} )
             }
         }
         
