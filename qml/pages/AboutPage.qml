@@ -59,7 +59,7 @@ Page
             Label
             {
                 x: Theme.paddingLarge
-                text: "(C) " + year + " kimmoli"
+                text: "(C) " + year + " You made this"
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeMedium
                 anchors.horizontalCenter: parent.horizontalCenter

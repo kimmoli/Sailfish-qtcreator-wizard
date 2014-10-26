@@ -9,48 +9,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 #include "%cClassName:l%.h"
-#include <QSettings>
-#include <QCoreApplication>
 
 %cClassName:c%::%cClassName:c%(QObject *parent) :
     QObject(parent)
 {
-	m_var = "";
-
 	emit versionChanged();
-}
-
-QString %cClassName:c%::readVersion()
-{
-	return APPVERSION;
-}
-
-void %cClassName:c%::readInitParams()
-{
-    QSettings settings;
-    m_var = settings.value("var", "").toString();
-
-    emit varChanged();
 }
 
 %cClassName:c%::~%cClassName:c%()
 {
 }
 
-
-QString %cClassName:c%::readVar()
+QString %cClassName:c%::readVersion()
 {
-    return m_var;
+	return APPVERSION;
 }
-
-void %cClassName:c%::writeVar(QString s)
-{
-    m_var = s;
-	
-    QSettings settings;
-    settings.setValue("var", m_var);
-
-	emit varChanged();	
-}
-
-	
