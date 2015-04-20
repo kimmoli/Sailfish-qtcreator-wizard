@@ -33,7 +33,7 @@
 -->
 
 <wizard version="1" kind="project"
-        class="qt4project" firstpage="10"
+        class="qmakeproject" firstpage="10"
         id="Q.SailfishOSOmaApplication" category="F.QtApplications"
         featuresRequired="Mer.Wizard.Feature.SailfishOS">
     <description>Creates a SailfishOS Qt QML/C++ application. Kimmon oma template!</description>
