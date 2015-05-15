@@ -60,7 +60,7 @@
             <fielddescription>Summary:</fielddescription>
         </field>
         <field mandatory="true" name="Version">
-            <fieldcontrol class="QLineEdit" defaulttext="0.1" />
+            <fieldcontrol class="QLineEdit" defaulttext="0.0.1" />
             <fielddescription>Version:</fielddescription>
         </field>
         <field mandatory="true" name="EkaSivu">

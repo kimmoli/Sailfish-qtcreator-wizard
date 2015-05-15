@@ -45,8 +45,29 @@ Page
                 color: Theme.primaryColor
                 font.pixelSize: Theme.fontSizeExtraLarge
             }
+            Label
+            {
+                text: "value from cover = " + valueFromCover
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+            Label
+            {
+                text: "value = " + %cClassName:l%.value
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+            Button
+            {
+                text: "Increment"
+                anchors.horizontalCenter: parent.horizontalCenter
+                onClicked: %cClassName:l%.incrementValue()
+            }
+            Button
+            {
+                text: "Clear"
+                anchors.horizontalCenter: parent.horizontalCenter
+                onClicked: %cClassName:l%.value = 0
+            }
         }
     }
-	
 }
 
